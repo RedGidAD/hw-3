@@ -16,6 +16,7 @@
   --white-color: #ffffff;
   --filter-batton-color: #f5f4fa;
   --black-color: #000000;
+  --hero-color: #2f303a;
 }
 body {
   background-color: var(--white-color);
@@ -25,6 +26,24 @@ body {
 }
 .list {
   list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/* global style reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px 0px 0px 0px;
+}
+p {
+  margin: 0px 0px 0px 0px;
+}
+ul {
+  margin: 0px 0px 0px 0px;
 }
 /* ================== /main seting ================== */
 
@@ -37,11 +56,17 @@ body {
   letter-spacing: 0.78px;
   text-decoration: none;
 }
-
 .heder-secend-color {
   color: var(--black-color);
 }
-
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid tomato;
+}
 .futer-secend-color {
   color: var(--white-color);
 }
@@ -54,6 +79,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -63,6 +89,11 @@ body {
   color: var(--accent-text-color);
 }
 /* contact-header */
+/* .header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(236, 236, 236);
+} */
 .contact-header .link {
   color: var(--main-text-color);
   font-size: 14px;
@@ -74,13 +105,18 @@ body {
   color: var(--accent-text-color);
 }
 /* ================== /header ================== */
-
+/* ================== HERO ================== */
+.hero {
+  background-color: var(--hero-color);
+}
+/* ================== HERO ================== */
 /* ================== FUTER ================== */
+.footer {
+  background-color: var(--hero-color);
+}
 .contact-futer-location {
   color: var(--white-color);
-  background-color: var(
-    --accent-text-color
-  ); /* ------------ DEL!!! ------------ */
+  text-decoration: none;
 }
 .contact-futer-location:hover,
 .contact-futer-location:focus {
@@ -88,6 +124,7 @@ body {
 }
 .contact-futer {
   color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
 }
 .contact-futer:hover,
 .contact-futer:focus {
@@ -98,8 +135,15 @@ body {
 /* ================== BATTON ================== */
 /* button "Замовити послугу" */
 .batton {
+  display: inline-block;
+  min-width: 216px;
+  min-height: 50;
   color: var(--white-color);
   background-color: var(--accent-text-color);
+  padding: 10px 32px 10px 32px;
+  border-width: 0;
+  border-radius: 4px;
+  cursor: pointer;
 }
 /* filter buttons */
 .filter-buttons {
@@ -119,9 +163,6 @@ body {
 /* hero */
 .hero-title {
   color: var(--white-color);
-  background-color: var(
-    --accent-text-color
-  ); /* ------------ DEL!!! ------------ */
   text-align: center;
   font-size: 44px;
   font-weight: 900;
@@ -145,6 +186,10 @@ body {
   letter-spacing: 0.42px;
 }
 /* sacteon */
+.saction {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 .saction-titel {
   color: var(--title-text-color);
   text-align: center;
