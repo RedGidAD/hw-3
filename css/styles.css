@@ -26,6 +26,7 @@ body {
 }
 .list {
   list-style: none;
+  padding-left: 0px;
 }
 .link {
   text-decoration: none;
@@ -74,6 +75,16 @@ ul {
 
 /* ================== header ================== */
 /* site-nav */
+.site-nav {
+  display: flex;
+}
+.site-nav li {
+  border: 2px solid tomato;
+  margin-right: 50px;
+}
+.site-nav li:last-child {
+  margin-right: 0px;
+}
 .site-nav .link {
   color: var(--title-text-color);
   font-size: 14px;
@@ -110,7 +121,7 @@ ul {
   background-color: var(--hero-color);
 }
 /* ================== HERO ================== */
-/* ================== FUTER ================== */
+/* ================== FOOTER ================== */
 .footer {
   background-color: var(--hero-color);
 }
@@ -130,7 +141,7 @@ ul {
 .contact-futer:focus {
   color: var(--accent-text-color);
 }
-/* ================== /FUTER ================== */
+/* ================== /FOOTER ================== */
 
 /* ================== BATTON ================== */
 /* button "Замовити послугу" */
@@ -147,9 +158,17 @@ ul {
 }
 /* filter buttons */
 .filter-buttons {
+  display: inline-block;
   color: var(--title-text-color);
   background-color: var(--filter-batton-color);
   cursor: pointer;
+  border-width: 0;
+  border-radius: 4px;
+  padding: 6px 22px 6px 22px;
+  min-height: 38;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
 }
 
 .filter-buttons:hover,
