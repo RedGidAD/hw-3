@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/svg+xml" href="./images/web-icon.svg">
     <title>WebStudio</title>
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -12,10 +13,10 @@
   </head>
   <body>
     <!-- ================== Header ================== -->
-      <header class="header saction">
-        <div class="container">
+      <header class="header">
+        <div class="container main-nav">
           <!-- logo in header -->
-          <a href="./index.html" class="logo">Web<span class="heder-secend-color">Studio</span></a>
+          <a href="./index.html" class="logo link">Web<span class="heder-secend-color">Studio</span></a>
           <!-- Menu nav -->
           <nav>
           <ul class="site-nav list">
@@ -37,7 +38,7 @@
     <!-- ================== Main ================== -->
     <main>
       <!-- ================== Hero ================== -->
-      <section class="hero saction">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <!-- button "Замовити послугу" -->
@@ -48,36 +49,38 @@
       <!-- ================== Advantages ================== -->
       <section class="saction">
         <div class="container">
-          <h2>Наші переваги</h2>
-          <ul class="list">
-            <li>
-              <h3 class="advantages-titel">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="advantages-content">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
-              </p>
-            </li>
-            <li>
-              <h3 class="advantages-titel">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="advantages-content">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне
-                у себе
-              </p>
-            </li>
-            <li>
-              <h3 class="advantages-titel">ПЛАНУВАННЯ</h3>
-              <p class="advantages-content">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
-            <li>
-              <h3 class="advantages-titel">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="advantages-content">
-                Значимість цих проблем настільки очевидна, що реалізація планових
-                завдань.
-              </p>
-            </li>
-          </ul>
+            <h2 class="zolo">Наші переваги</h2>
+            <div class="main-studio">
+              <ul class="list">
+                <li>
+                  <h3 class="advantages-titel">УВАГА ДО ДЕТАЛЕЙ</h3>
+                  <p class="advantages-content">
+                    Ідейні міркування, і навіть початок повсякденної роботи з
+                    формування позиції.
+                  </p>
+                </li>
+                <li>
+                  <h3 class="advantages-titel">ПУНКТУАЛЬНІСТЬ</h3>
+                  <p class="advantages-content">
+                    Завдання організації, особливо рамки і місце навчання кадрів тягне
+                    у себе
+                  </p>
+                </li>
+                <li>
+                  <h3 class="advantages-titel">ПЛАНУВАННЯ</h3>
+                  <p class="advantages-content">
+                    Так само консультація з широким активом значною мірою зумовлює.
+                  </p>
+                </li>
+                <li>
+                  <h3 class="advantages-titel">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                  <p class="advantages-content">
+                    Значимість цих проблем настільки очевидна, що реалізація планових
+                    завдань.
+                  </p>
+                </li>
+              </ul>    
+            </div>   
         </div>
       </section>
       <!-- ================== /Advantages ================== -->
@@ -85,6 +88,7 @@
       <section class="saction">
         <div class="container">
           <h2 class="saction-titel">Чим ми займаємося</h2>
+          <div class="main-studio">
           <ul class="list">
             <li>
               <img
@@ -100,21 +104,23 @@
                 width="370"
                 height="294">
             </li>
-            <li>
-              <img
+              <li>
+                <img
                 src="./images/box3.jpg"
                 alt="Планшет на екрані якого зображення кольорової палітри."
                 width="370"
                 height="294">
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <!-- ================== What are we doing ================== -->
       <!-- ================== Our team ================== -->
-      <section class="saction">
-        <div class="container">
+      <section class="saction team-section">
+        <div class="container team-container">
           <h2 class="saction-titel">Наша команда</h2>
+          <div class="main-studio">
           <ul class="list">
             <li>
                 <img
@@ -153,16 +159,17 @@
                   <p  class="team-profession">UI Designer</p>
             </li>
           </ul>
+          </div>
         </div>
       </section>
       <!-- ================== /Our team ================== -->
     </main>
     <!-- ================== Main ================== -->
     <!-- ================== Footer ================== -->
-    <footer class="footer saction">
+    <footer class="footer">
       <div class="container">
       <!-- Logo in futer -->
-      <a href="./index.html" class="logo">Web<span class="futer-secend-color">Studio</span></a>
+      <a href="./index.html" class="logo link">Web<span class="futer-secend-color">Studio</span></a>
       <!-- address in futer -->
       <address>
         <ul class="list">
